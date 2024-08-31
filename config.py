@@ -37,7 +37,7 @@ UPSTREAM_REPO = getenv(
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
-)  # Fill this variable if your upstream repository is private
+)  # Fill this variable if ypur upstream repository is private
 
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/ThunderBoltFantasy")
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/BeAkatsuki")
@@ -47,9 +47,8 @@ AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
 
 
 # Get this credentials from https://developer.spotify.com/dashboard
-SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", 19977e35187f45e3b1fe8a44b2949cd7)
-SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", f3a03a4940d24b60b3eaaefb8f6e1038)
-
+SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID",None )
+SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET",None)
 
 # Maximum limit for fetching playlist's track from youtube, spotify, apple links.
 PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", 25))
